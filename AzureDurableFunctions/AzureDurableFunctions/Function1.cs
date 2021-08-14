@@ -49,7 +49,7 @@ namespace AzureDurableFunctions
         public static string SendImportMrpResult([ActivityTrigger] string file, ILogger log)
         {
             log.LogInformation($"Read items from file {file}.");
-            return $"Hello {file}!";
+            return $"Send import results {file}!";
         }
 
         [FunctionName("ImportMrp")]
